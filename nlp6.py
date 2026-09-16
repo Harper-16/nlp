@@ -10,11 +10,12 @@ ROUTER_URL = "https://router.huggingface.co/v1/chat/completions"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}", "Content-Type": "application/json"}
 
 VISION_MODELS = [
-    "moonshotai/Kimi-K2.6:novita",
-    "meta-llama/Llama-4-Maverick-17B-128E-Instruct:sambanova",
-    "meta-llama/Llama-3.2-11B-Vision-Instruct:sambanova",
-]
 
+"moonshotai/Kimi-K2.6:fastest",
+
+"moonshotai/Kimi-K2.6",
+
+]
 TEXT_MODELS = [
     "Qwen/Qwen2.5-7B-Instruct:together",
     "Qwen/Qwen2.5-14B-Instruct:together",
