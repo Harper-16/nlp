@@ -16,12 +16,12 @@ VISION_MODELS = [
 "moonshotai/Kimi-K2.6",
 
 ]
+
+
 TEXT_MODELS = [
-    "Qwen/Qwen2.5-7B-Instruct:together",
-    "Qwen/Qwen2.5-14B-Instruct:together",
-    "Qwen/Qwen2.5-32B-Instruct:together",
-    "mistralai/Mistral-7B-Instruct-v0.3:together",
-    "mistralai/Mixtral-8x7B-Instruct-v0.1:together",
+
+"meta-llama/Llama-3.1-8B-Instruct",
+
 ]
 
 def _data_url(path: str) -> str:
