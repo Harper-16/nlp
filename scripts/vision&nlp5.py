@@ -1,5 +1,5 @@
 import base64 ,requests
-from config import HF_API_KEY
+from scripts.config import HF_API_KEY
 
 API_URL = "https://router.huggingface.co/v1/chat/completions"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}", "Content-Type": "application/json"}
@@ -51,6 +51,7 @@ def caption_single_image():
     }
 
     last = None
+    cap = ""
     for model in MODELS:
         payload = dict(base, model=model)
         try:

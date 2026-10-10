@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.wav
+images/generated_*.png
+annotated_*.png
+.env
+scripts/config_local.py

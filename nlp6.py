@@ -1,4 +1,7 @@
-from config import HF_API_KEY
+try:
+    from scripts.config import HF_API_KEY
+except ImportError:
+    from config import HF_API_KEY
 import base64
 import requests, os, re, json, time, random, sys
 from colorama import Fore, Style, init
